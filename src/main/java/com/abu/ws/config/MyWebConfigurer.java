@@ -1,12 +1,12 @@
 package com.abu.ws.config;
 
-import com.abu.ws.interceptor.LoginInterceptor;
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import com.abu.ws.interceptor.LoginInterceptor;
 
 @SpringBootConfiguration
 public class MyWebConfigurer implements WebMvcConfigurer {
