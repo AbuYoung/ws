@@ -12,7 +12,7 @@ public class UserService {
 
 	public boolean isExist(String username) {
 		User user = getByName(username);
-		return null!=user;
+		return null != user;
 	}
 
 	public User getByName(String username) {
