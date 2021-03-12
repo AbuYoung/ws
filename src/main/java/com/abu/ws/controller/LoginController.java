@@ -16,6 +16,7 @@ public class LoginController {
 	@Autowired
 	UserService userService;
 
+	@CrossOrigin
 	@PostMapping(value = "/api/login")
 	@ResponseBody
 	// 对 html 标签进行转义，防止 XSS 攻击
