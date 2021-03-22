@@ -18,7 +18,7 @@
 	<packaging>jar</packaging>
 
 	<properties>
-		<java.version>1.15</java.version>
+		<java.version>15</java.version>
 	</properties>
 
 	<dependencies>
@@ -91,6 +91,11 @@
 			<version>4.13.1</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<scope>test</scope>
+		</dependency>
 		<!-- tomcat的支持 -->
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
@@ -129,6 +134,19 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-maven-plugin</artifactId>
 			<version>2.3.4.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.prometheus</groupId>
+			<artifactId>simpleclient_pushgateway</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.micrometer</groupId>
+			<artifactId>micrometer-registry-prometheus</artifactId>
+			<version>${micrometer.version}</version>
 		</dependency>
 	</dependencies>
 
